@@ -11,6 +11,8 @@ import (
 
 type Config struct {
 	MongoUri string `env:"MONGO_URI,required"`
+	Password string `env:"PASSWORD,required"`
+	Salt     string `env:"SALT,required"`
 }
 
 func LoadConfig() (*Config, error) {
