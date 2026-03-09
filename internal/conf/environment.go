@@ -10,9 +10,13 @@ import (
 )
 
 type Config struct {
-	MongoUri string `env:"MONGO_URI,required"`
-	Password string `env:"PASSWORD,required"`
-	Salt     string `env:"SALT,required"`
+	MongoUri   string `env:"MONGO_URI,required"`
+	Password   string `env:"PASSWORD,required"`
+	Salt       string `env:"SALT,required"`
+	AccessKey  string `env:"ACCESS_KEY,required"`
+	SecretKey  string `env:"SECRET_KEY,required"`
+	Bucket     string `env:"BUCKET,required"`
+	S3Endpoint string `env:"S3_ENDPOINT"`
 }
 
 func LoadConfig() (*Config, error) {
