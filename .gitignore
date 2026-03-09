@@ -7,3 +7,6 @@
 
 # environments
 .env
+
+# project files
+backups/
