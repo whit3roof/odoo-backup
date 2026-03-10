@@ -17,6 +17,7 @@ type Config struct {
 	SecretKey  string `env:"SECRET_KEY,required"`
 	Bucket     string `env:"BUCKET,required"`
 	S3Endpoint string `env:"S3_ENDPOINT"`
+	DiscordURL string `env:"DISCORD_WEBHOOK"`
 }
 
 func LoadConfig() (*Config, error) {
