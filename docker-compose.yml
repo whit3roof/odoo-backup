@@ -1,0 +1,7 @@
+services:
+  backup:
+    build: .
+    env_file: .env
+    volumes:
+      - ./backups:/app/backups
+    restart: "no"
